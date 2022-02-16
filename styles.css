@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color:black;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+a:hover{
+    color:#53bce2;
+}
+nav{
+    width:100vw;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    position:fixed;
+    top:0;
+    padding-top:30px;
+    padding-bottom:15px;
+}
+.main-nav{
+    width:50%;
+    min-width:490px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left:45px;
+}
+.main-logo{
+font-size:4rem;
+font-weight:900;
+line-height:15px;
+}
+.main-navlinks a{
+    font-size:16px;
+    font-weight:500;
+    margin-right:10px;
+    transition:color 0.25s ease-in;
+}
+.main-navlinks a:last-of-type{
+    margin-right:20;
+}
+.main-navlinks a:hover{
+    cursor:pointer;
+}
+
+
+/*HEADER PRINCIPAL*/
+
+header{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-sizing:border-box;
+    flex-wrap:wrap;
+}
+.header-content{
+    width: 50vw;
+    min-width:480px;
+    height:100%;
+    display:flex;
+    display:column;
+    justify-content:center;
+    align-items:center;
+    flex-grow:1;
+}
+.header-title{
+    position:relative;
+    left:130px;
+}
+h1{
+    font-size:6.5rem;
+    letter-spacing:12px;
+    line-height:80px;
+    color:black;
+}
+h2{
+    color:#020202cd;
+}
+p{
+    font-size:1.2rem;
+    margin-top:30px;
+    color:rgba(0, 0, 0, 0.577);
+}
+
+
+
+.header-socialmedia{
+    align-self:flex-end;
+    transform: rotate(-90deg) translateX(150px) translateY(50px);
+    min-width:270px;
+    
+}
+.header-socialmedia a{
+    font-size:1rem;
+    color:rgba(0, 0, 0, 0.577);
+    margin:10px;
+    transition: color 0.25s ease-in;
+}
+.header-socialmedia a:hover{
+    color:#53bce2;
+    cursor:pointer;
+}
+
+
+.header-photos{
+    width:50vw;
+    height:100%;
+    box-sizing:border-box;
+    display:flex;
+    justify-content:stretch;
+    align-items:stretch;
+    flex-grow:1;
+    flex-wrap:wrap;
+    
+}
+.header-mainphoto{
+    width:100%;
+    height:66.5%;
+    flex-grow:1;
+    background-image: url(imgs/pacific-office-interiors-kGs09BE5o3s-unsplash.jpg);
+    background-size:cover;
+    background-position:left;
+    background-repeat: none;
+}
+.header-smallcontent{
+    width:50%;
+    height:33.5%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:right;
+    background-color:#2f3c5c;
+    color:white;
+    font-size:2rem;
+}
+.whitechair{
+    background-image: url(imgs/dillon-mangum-9489sFfgk4c-unsplash.jpg);
+    background-position:center;
+    background-repeat:none;
+    background-size:cover;
+}
+.header-smallcontent p a{
+    color:white;
+    transition: color 0.25s ease-in;
+}
+.header-smallcontent p a:hover{
+    color:#53bce2;
+    cursor:pointer;
+}
+.header-smallcontent span{
+    margin-right:20px;
+}
+
+
+@media (max-width:960px){
+    .main-nav{
+        width:100vw;
+    }
+    .header-socialmedia{
+        transform: rotate(-90deg) translateX(150px) translateY(100px);
+        
+    }
+}
+@media (max-width:640px){
+    .header-socialmedia{
+        transform: rotate(-90deg) translateX(150px) translateY(0);
+        
+    }
+}
